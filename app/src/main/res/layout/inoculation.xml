@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inoculationActivity">
+
+
+    <include
+        layout="@layout/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn2"
+        app:layout_constraintEnd_toEndOf="@+id/btn3"
+        app:layout_constraintStart_toEndOf="@+id/btn3"
+        app:layout_constraintTop_toBottomOf="@+id/btn2">
+
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/kids_inoculation"
+            app:layout_constraintBottom_toTopOf="@+id/btn3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn2"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/my_inoculation"
+            app:layout_constraintBottom_toTopOf="@+id/btn4"
+            app:layout_constraintLeft_toRightOf="@+id/btn1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/inoculation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn4"
+            app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+        <ImageButton
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/family"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/btn3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn1"
+
+            app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawerlayout" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

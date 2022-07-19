@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/menuitem1"
+        android:title="병원 페이지" />
+    <item
+        android:id="@+id/menuitem2"
+        android:title="예방 접종 관리 페이지" />
+    <item
+        android:id="@+id/menuitem3"
+        android:title="응급조치 페이지" />
+    <item
+        android:id="@+id/menuitem4"
+        android:title="혜택 공지 페이지" />
+    <item
+        android:id="@+id/menuitem5"
+        android:title="성장 곡선 페이지" />
+    <item
+        android:id="@+id/menuitem6"
+        android:title="로그인" />
+</menu>
